@@ -33,3 +33,9 @@ Yhat = a*X + b
 plt.scatter(X, y)
 plt.plot(X, Yhat)
 plt.show()
+
+#now we want calculate R squre R=1-ssRes/ssTot
+
+d1=y-Yhat
+d2=y-y.sum()
+R=1-d1.dot(d1)/d2.dot(d2)
